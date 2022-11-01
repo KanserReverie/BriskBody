@@ -12,6 +12,7 @@ namespace BriskBody.Scripts
 
         private void Start()
         {
+            DontDestroyOnLoad(this);
             playerRigidbody = GetComponentInChildren<Rigidbody>();
             RestartLevel();
         }
@@ -22,6 +23,7 @@ namespace BriskBody.Scripts
             ResetPlayerRigidbody();
             SavePlayerRigidbody();
             UnPauseGame();
+            GameUI.Instance.RefreshLevelUI();
         }
         private void MoveToStartPoint()
         {

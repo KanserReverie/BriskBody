@@ -29,24 +29,28 @@ namespace BriskBody.Scripts
 
         private void Start()
         {
-            level = SceneManager.GetActiveScene().buildIndex - 1;
             DontDestroyOnLoad(this);
-            levelText.text = $"{level}";
+            RefreshLevelUI();
             gameTime = 0f;
-            timerText.text = $"{gameTime:0.000}";
+            timerText.text = $"{gameTime:00:00.000}";
         }
         
         private void Update()
         {
             gameTime += Time.deltaTime;
-            timerText.text = $"{gameTime:0.000}";
+            timerText.text = $"{gameTime:00:00.000}";
+        }
+
+        public void RefreshLevelUI()
+        {
+            level = SceneManager.GetActiveScene().buildIndex;
+            levelText.text = $"{level}";
         }
 
         public void NextLevel()
         {
             CommonlyUsedStaticMethods.GotoNextScene();
-            level = SceneManager.GetActiveScene().buildIndex - 1;
-            levelText.text = $"{level}";
+            RefreshLevelUI();
         }
     }
 }
