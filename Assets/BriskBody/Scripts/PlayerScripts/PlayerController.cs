@@ -1,7 +1,7 @@
 using UnityEngine;
-namespace BriskBody.Scripts
+namespace BriskBody.Scripts.PlayerScripts
 {
-    public class Player : MonoBehaviour
+    public class PlayerController : MonoBehaviour
     {
         private bool gamePaused;
         [SerializeField] private GameObject pauseText;
@@ -12,7 +12,7 @@ namespace BriskBody.Scripts
 
         private void Start()
         {
-            DontDestroyOnLoad(this);
+            DontDestroyOnLoad(gameObject);
             playerRigidbody = GetComponentInChildren<Rigidbody>();
             RestartLevel();
         }

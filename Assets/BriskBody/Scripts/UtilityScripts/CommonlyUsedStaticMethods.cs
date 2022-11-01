@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-namespace BriskBody.Scripts
+namespace BriskBody.Scripts.UtilityScripts
 {
     public class CommonlyUsedStaticMethods : MonoBehaviour
     {

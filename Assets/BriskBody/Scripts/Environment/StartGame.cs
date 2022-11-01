@@ -1,6 +1,6 @@
+using BriskBody.Scripts.UtilityScripts;
 using UnityEngine;
-
-namespace BriskBody.Scripts
+namespace BriskBody.Scripts.Environment
 {
     public class StartGame : MonoBehaviour
     {

@@ -1,6 +1,5 @@
 using UnityEngine;
-
-namespace BriskBody.Scripts
+namespace BriskBody.Scripts.PlayerScripts
 {
     public class FollowGameObject : MonoBehaviour
     {

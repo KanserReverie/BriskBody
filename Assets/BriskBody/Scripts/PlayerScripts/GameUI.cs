@@ -1,8 +1,8 @@
-﻿using System;
+﻿using BriskBody.Scripts.UtilityScripts;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-namespace BriskBody.Scripts
+namespace BriskBody.Scripts.PlayerScripts
 {
     public class GameUI : MonoBehaviour
     {
@@ -39,6 +39,7 @@ namespace BriskBody.Scripts
         {
             gameTime += Time.deltaTime;
             timerText.text = $"{gameTime:00:00.000}";
+            RefreshLevelUI();
         }
 
         public void RefreshLevelUI()

@@ -1,12 +1,12 @@
+using BriskBody.Scripts.PlayerScripts;
 using UnityEngine;
-
-namespace BriskBody.Scripts
+namespace BriskBody.Scripts.Environment
 {
     public class DeathBlock : MonoBehaviour
     {
         private void OnTriggerEnter(Collider other)
         {
-            FindObjectOfType<Player>().RestartLevel();
+            FindObjectOfType<PlayerController>().RestartLevel();
         }
     }
 }
