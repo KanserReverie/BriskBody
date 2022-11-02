@@ -1,5 +1,5 @@
-using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 namespace BriskBody.Scripts.PlayerScripts
 {
     public class PlayerController : MonoBehaviour
@@ -20,6 +20,15 @@ namespace BriskBody.Scripts.PlayerScripts
             Time.timeScale = 1.2f;
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                SceneManager.LoadScene(0);
+                Destroy(gameObject);
+            }
+        }
+
         public void RestartLevel()
         {
             MoveToStartPoint();
@@ -31,11 +40,15 @@ namespace BriskBody.Scripts.PlayerScripts
         private void MoveToStartPoint()
         {
             Transform startPoint = FindObjectOfType<LevelStartPoint>().transform;
-            playerRigidbody.gameObject.transform.position = startPoint.position;
-            playerRigidbody.gameObject.transform.rotation = startPoint.rotation;
+            if (startPoint)
+            {
+                playerRigidbody = GetComponentInChildren<Rigidbody>();
+                playerRigidbody.gameObject.transform.position = startPoint.position; 
+                playerRigidbody.gameObject.transform.rotation = startPoint.rotation;
+            }
         }
 
-        private void ResetPlayerRigidbody()
+        public void ResetPlayerRigidbody()
         {
             playerRigidbody.velocity = Vector3.zero;
             playerRigidbody.angularVelocity = Vector3.zero;

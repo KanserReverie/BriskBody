@@ -23,6 +23,11 @@ namespace BriskBody.Scripts.Environment
         {
             if (triggerDelay <= 0)
             {
+                PlayerController player = FindObjectOfType<PlayerController>();
+                if (player)
+                {
+                    player.ResetPlayerRigidbody();
+                }
                 GameUI.Instance.NextLevel();
             }
         }

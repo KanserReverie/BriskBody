@@ -30,15 +30,6 @@ EditorBuildSettings:
     path: Assets/BriskBody/Scenes/Level 7.unity
     guid: 554c195beaeff454f814070716c19087
   - enabled: 1
-    path: Assets/BriskBody/Scenes/Level 8.unity
-    guid: ff94be2f1ec73794fb14e3a7a6b9d4dc
-  - enabled: 1
-    path: Assets/BriskBody/Scenes/Level 9.unity
-    guid: ae46eb541776dbd4db04e0fd97b1bdb0
-  - enabled: 1
-    path: Assets/BriskBody/Scenes/Level 10.unity
-    guid: 3ae64f141db0a19459511b28cd784291
-  - enabled: 1
-    path: Assets/BriskBody/Scenes/End Scene.unity
+    path: Assets/BriskBody/Scenes/EndScene.unity
     guid: 73b9f88e9eec9964aa2b68129a287361
   m_configObjects: {}

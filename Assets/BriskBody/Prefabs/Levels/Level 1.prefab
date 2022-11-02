@@ -231,7 +231,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5879604557981138363, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
       propertyPath: m_VersionIndex
-      value: 148
+      value: 166
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879604557981138363, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
+      propertyPath: m_SelectedEdges.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879604557981138363, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
+      propertyPath: m_SelectedVertices.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
@@ -319,11 +327,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4506143581222414581, guid: 2fbaa46340f56a046b7e2c3b66402b92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.23
+      value: -13.45
       objectReference: {fileID: 0}
     - target: {fileID: 4506143581222414581, guid: 2fbaa46340f56a046b7e2c3b66402b92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.27
+      value: 5.17
       objectReference: {fileID: 0}
     - target: {fileID: 4506143581222414581, guid: 2fbaa46340f56a046b7e2c3b66402b92, type: 3}
       propertyPath: m_LocalPosition.z

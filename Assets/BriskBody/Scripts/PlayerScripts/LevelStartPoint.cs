@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using BriskBody.Scripts.Menus;
+using UnityEngine;
 namespace BriskBody.Scripts.PlayerScripts
 {
     public class LevelStartPoint : MonoBehaviour
@@ -9,6 +10,11 @@ namespace BriskBody.Scripts.PlayerScripts
             if (playerInScene)
             {
                 playerInScene.RestartLevel();
+            }
+            ReturnButton returnButton = FindObjectOfType<ReturnButton>();
+            if (returnButton)
+            {
+                returnButton.CheckWhichReturnButtonToTurnOn();
             }
         }
     }

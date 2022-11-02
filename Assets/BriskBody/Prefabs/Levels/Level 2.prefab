@@ -188,11 +188,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8446203198294655821, guid: 470229ecd108bab48be579bfd3e0b776, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.1598606
+      value: -4.17
       objectReference: {fileID: 0}
     - target: {fileID: 8446203198294655821, guid: 470229ecd108bab48be579bfd3e0b776, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0633302
+      value: 5.22
       objectReference: {fileID: 0}
     - target: {fileID: 8446203198294655821, guid: 470229ecd108bab48be579bfd3e0b776, type: 3}
       propertyPath: m_LocalPosition.z
@@ -250,8 +250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5324b531031344f8903c8d109fffb73e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pos1: {x: -2.1598606, y: 2.0633302, z: 0}
-  pos2: {x: -1.659861, y: 4.06333, z: 0}
+  pos1: {x: -4.17, y: 5.22, z: 0}
+  pos2: {x: -4.8, y: 2.71, z: 0}
   speed: 1
 --- !u!1001 &822148540545542297
 PrefabInstance:
@@ -320,6 +320,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5879604557981138363, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
+      propertyPath: m_VersionIndex
+      value: 785
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879604557981138363, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
+      propertyPath: m_SelectedEdges.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879604557981138363, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
+      propertyPath: m_SelectedVertices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb9bd84983b6cd8418ac08b77eb1619a, type: 3}
 --- !u!4 &6552832619097691423 stripped
@@ -340,11 +352,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4506143581222414581, guid: 2fbaa46340f56a046b7e2c3b66402b92, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.23
+      value: -12.67
       objectReference: {fileID: 0}
     - target: {fileID: 4506143581222414581, guid: 2fbaa46340f56a046b7e2c3b66402b92, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.27
+      value: 4.92
       objectReference: {fileID: 0}
     - target: {fileID: 4506143581222414581, guid: 2fbaa46340f56a046b7e2c3b66402b92, type: 3}
       propertyPath: m_LocalPosition.z

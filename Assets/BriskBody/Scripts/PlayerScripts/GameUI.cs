@@ -26,9 +26,12 @@ namespace BriskBody.Scripts.PlayerScripts
         [SerializeField] private TextMeshProUGUI levelText;
         private float gameTime;
         private float level;
+        private bool stopCounting;
+        public float GameTime => gameTime;
 
         private void Start()
         {
+            stopCounting = false;
             DontDestroyOnLoad(this);
             RefreshLevelUI();
             gameTime = 0f;
@@ -37,6 +40,8 @@ namespace BriskBody.Scripts.PlayerScripts
         
         private void Update()
         {
+            if (stopCounting)
+                return;
             gameTime += Time.deltaTime;
             timerText.text = $"{gameTime:00:00.000}";
             RefreshLevelUI();
@@ -50,6 +55,14 @@ namespace BriskBody.Scripts.PlayerScripts
 
         public void NextLevel()
         {
+            int nextSceneNumber = SceneManager.GetActiveScene().buildIndex + 1;
+            string nextSceneName = SceneManager.GetSceneByBuildIndex(nextSceneNumber).name;
+            
+            if (nextSceneName == "EndScene")
+            {
+                stopCounting = true;
+            }
+            
             CommonlyUsedStaticMethods.GotoNextScene();
             RefreshLevelUI();
         }
