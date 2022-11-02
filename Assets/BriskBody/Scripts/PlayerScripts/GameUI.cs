@@ -17,7 +17,9 @@ namespace BriskBody.Scripts.PlayerScripts
             if (_instance != null && _instance != this)
             {
                 Destroy(this.gameObject);
-            } else {
+            }
+            else
+            {
                 _instance = this;
             }
         }
@@ -43,7 +45,8 @@ namespace BriskBody.Scripts.PlayerScripts
             if (stopCounting)
                 return;
             gameTime += Time.deltaTime;
-            timerText.text = $"{gameTime:00:00.000}";
+            int gameMinutes = Mathf.FloorToInt(gameTime / 60);
+            timerText.text = ($"{gameMinutes:00}:{(gameTime-gameMinutes*60):00.000}");
             RefreshLevelUI();
         }
 

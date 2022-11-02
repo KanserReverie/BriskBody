@@ -10,6 +10,7 @@ namespace BriskBody.Scripts.PlayerScripts
             if (playerInScene)
             {
                 playerInScene.RestartLevel();
+                playerInScene.ResetPlayerRigidbody();
             }
             ReturnButton returnButton = FindObjectOfType<ReturnButton>();
             if (returnButton)

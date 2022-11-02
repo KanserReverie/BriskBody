@@ -49,7 +49,8 @@ namespace BriskBody.Scripts.Menus
         private void EndGameSequence()
         {
             finalTime = playerUI.GameTime;
-            finalTimeText.text = $"{finalTime:00:00.000}";
+            int gameMinutes = Mathf.FloorToInt(finalTime / 60);
+            finalTimeText.text = ($"{gameMinutes:00}:{(finalTime-gameMinutes*60):00.000}");
             Destroy(playerInScene.gameObject);
             runEndGameSequenceYet = true;
         }
