@@ -4,9 +4,13 @@ namespace BriskBody.Scripts.Environment
 {
     public class DeathBlock : MonoBehaviour
     {
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerStay(Collider other)
         {
-            FindObjectOfType<PlayerController>().RestartLevel();
+            PlayerController player = FindObjectOfType<PlayerController>();
+            if (player)
+            {
+                player.RestartLevel();
+            }
         }
     }
 }

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 namespace BriskBody.Scripts.PlayerScripts
 {
@@ -15,8 +16,10 @@ namespace BriskBody.Scripts.PlayerScripts
             DontDestroyOnLoad(gameObject);
             playerRigidbody = GetComponentInChildren<Rigidbody>();
             RestartLevel();
+            playerRigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
+            Time.timeScale = 1.2f;
         }
-        
+
         public void RestartLevel()
         {
             MoveToStartPoint();
@@ -80,6 +83,7 @@ namespace BriskBody.Scripts.PlayerScripts
         private void UnFreezePlayer()
         {
             playerRigidbody.constraints = RigidbodyConstraints.None;
+            playerRigidbody.constraints = RigidbodyConstraints.FreezePositionZ;
         }
         
         private void LoadPlayerRigidbody()
